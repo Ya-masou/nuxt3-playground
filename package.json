@@ -1,0 +1,14 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "nuxt3": "3.0.0-27244261.c49f9ca",
+    "nuxt-windicss": "^2.0.4"
+  }
+}
