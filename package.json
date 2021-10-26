@@ -5,10 +5,19 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "codegen": "graphql-codegen -c ./codegen.yml"
   },
   "devDependencies": {
-    "nuxt3": "3.0.0-27244261.c49f9ca",
-    "nuxt-windicss": "^2.0.4"
+    "@graphql-codegen/cli": "^2.2.1",
+    "@graphql-codegen/typescript": "^2.2.4",
+    "@graphql-codegen/typescript-operations": "^2.1.8",
+    "@graphql-codegen/typescript-vue-urql": "^2.1.6",
+    "nuxt-windicss": "^2.0.4",
+    "nuxt3": "3.0.0-27244261.c49f9ca"
+  },
+  "dependencies": {
+    "@urql/vue": "^0.5.0",
+    "graphql": "^15.6.1"
   }
 }
