@@ -1,5 +1,28 @@
-query Hoge {
-  getCityByName(name: "Tokyo") {
+query GetCityByName($name: String!, $config: ConfigInput) {
+  getCityByName(name: $name, config: $config) {
     id
+    name
+    country
+    weather {
+      summary {
+        title
+        description
+      }
+      temperature {
+        actual
+        feelsLike
+        min
+        max
+      }
+      wind {
+        speed
+        deg
+      }
+      clouds {
+        all
+        visibility
+        humidity
+      }
+    }
   }
 }

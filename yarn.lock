@@ -574,6 +574,17 @@
     auto-bind "~4.0.0"
     tslib "~2.3.0"
 
+"@graphql-codegen/typescript-urql@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-urql/-/typescript-urql-3.2.2.tgz#b5cbac8ac555357c02dc4b12dcc39117589e5c46"
+  integrity sha512-AxIuTQKMpaeswdlfM/1/WUMvptX2Hwly0ZE40RTBmpcOzI5U7ttb4lDFEZYfaFuz0wg0CorBszw8ITN0jAxR5w==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "^2.2.0"
+    "@graphql-codegen/visitor-plugin-common" "2.4.0"
+    auto-bind "~4.0.0"
+    change-case-all "1.0.14"
+    tslib "~2.3.0"
+
 "@graphql-codegen/typescript-vue-urql@^2.1.6":
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-vue-urql/-/typescript-vue-urql-2.1.6.tgz#41b51183e7e596bca40fda5891c08752e65db523"

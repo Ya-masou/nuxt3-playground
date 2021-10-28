@@ -12,9 +12,10 @@
     "@graphql-codegen/cli": "^2.2.1",
     "@graphql-codegen/typescript": "^2.2.4",
     "@graphql-codegen/typescript-operations": "^2.1.8",
+    "@graphql-codegen/typescript-urql": "^3.2.2",
     "@graphql-codegen/typescript-vue-urql": "^2.1.6",
     "nuxt-windicss": "^2.0.4",
-    "nuxt3": "3.0.0-27244261.c49f9ca"
+    "nuxt3": "3.0.0-27255771.f78ec93"
   },
   "dependencies": {
     "@urql/vue": "^0.5.0",
