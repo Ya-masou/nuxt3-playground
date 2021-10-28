@@ -5,13 +5,6 @@
         <div>
           Nuxt3 すぶり
         </div>
-        <div>
-          <ul class="flex gap-x-8">
-            <li>いぬ</li>
-            <li>ねこ</li>
-            <li>とり</li>
-          </ul>
-        </div>
       </div>
     </div>
   </header>
@@ -21,3 +14,12 @@
   </main>
 </template>
 
+<script>
+import { createClient, provideClient } from "@urql/vue"
+
+const client = createClient({
+  url: "https://graphql-weather-api.herokuapp.com/graphql"
+})
+
+provideClient(client)
+</script>

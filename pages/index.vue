@@ -1,3 +1,3 @@
 <template>
-  <PagesDogs />
+  <PagesWeather />
 </template>
