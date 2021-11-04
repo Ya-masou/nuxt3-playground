@@ -12,13 +12,3 @@
   </div>
 </template>
 
-<script>
-import { useGetCityByNameQuery } from '../../graphql/__generated__/types';
-
-export default {
-  setup() {
-    const result = useGetCityByNameQuery()
-    console.log(result)
-  }
-}
-</script>

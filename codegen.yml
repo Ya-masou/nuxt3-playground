@@ -1,8 +1,0 @@
-schema: https://graphql-weather-api.herokuapp.com/graphql
-documents: ./graphql/**/*.graphql
-generates:
-  ./graphql/__generated__/types.ts:
-    plugins:
-      - typescript
-      - typescript-operations
-      - typescript-vue-urql

@@ -14,12 +14,3 @@
   </main>
 </template>
 
-<script>
-import { createClient, provideClient } from "@urql/vue"
-
-const client = createClient({
-  url: "https://graphql-weather-api.herokuapp.com/graphql"
-})
-
-provideClient(client)
-</script>
