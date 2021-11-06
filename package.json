@@ -11,5 +11,6 @@
   "dependencies": {
     "nuxt-windicss": "^2.0.11",
     "nuxt3": "3.0.0-27266907.929a634"
-  }
+  },
+  "devDependencies": {}
 }
