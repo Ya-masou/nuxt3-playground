@@ -1,22 +1,23 @@
 <template>
-  <p v-if="pending">
-    Loading...
-  </p>
-  <div v-else>
-    <div v-for="pokemon in pokemons">
-      name: {{ pokemon.name }}
-      <br>
-      url: {{ pokemon.url }}
-    </div>
+  <div v-for="pokemon in pokemons">
+    name: {{ pokemon.name }}
+    <br>
+    url: {{ pokemon.url }}
   </div>
 </template>
 
-<script lang="ts" setup>
-type Pokemon = {
-  name: string,
-  url: string,
-}
+<script lang="ts">
+import { defineComponent } from "vue"
+import usePokemons from "@/composables/usePokemons"
 
-const { pending, data } = await useFetch<string, { results: Array<Pokemon> }>("/api/v2/pokemon", { pick: ["results"], baseURL: "https://pokeapi.co" })
-const pokemons = data.value.results
+export default defineComponent({
+  async setup() {
+    const { pokemons, fetchPokemons } = usePokemons()
+    fetchPokemons()
+
+    return {
+      pokemons,
+    }
+  }
+})
 </script>
